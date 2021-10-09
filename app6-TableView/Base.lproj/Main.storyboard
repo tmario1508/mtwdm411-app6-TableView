@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QEN-ys-HdZ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="SaN-cM-yXs">
+            <objects>
+                <tableViewController id="uSx-LV-RFc" customClass="ViewController" customModule="app6_TableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Bnk-Ht-7fT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellNombre" id="iBf-GD-UUJ">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iBf-GD-UUJ" id="goc-gg-Kc1">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="uSx-LV-RFc" id="ftD-Bc-1T4"/>
+                            <outlet property="delegate" destination="uSx-LV-RFc" id="zeW-Pb-vRs"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Table View Controller" id="ssC-QN-VuZ">
+                        <barButtonItem key="backBarButtonItem" title="Ejercicios Tabla" id="IrR-Y6-OdG"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dqT-bv-6d3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3049" y="-316"/>
+        </scene>
+        <!--Tabla con Refresh-->
+        <scene sceneID="9ng-GO-uCd">
+            <objects>
+                <tableViewController id="yIm-wS-YX3" customClass="TableIndicatorViewController" customModule="app6_TableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cz4-ia-Aid">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellNombre" id="5vt-Bx-75P">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5vt-Bx-75P" id="6QA-Dh-ZX0">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="yIm-wS-YX3" id="20k-0Y-cBP"/>
+                            <outlet property="delegate" destination="yIm-wS-YX3" id="WQs-Hc-w3P"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Tabla con Refresh" id="7JX-78-8qZ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dy0-dM-Yx1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3025" y="337"/>
+        </scene>
+        <!--Ejercicios Tabla-->
+        <scene sceneID="TOr-zh-wTz">
+            <objects>
+                <viewController id="RLu-AG-4ic" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i3k-BW-n9U">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qze-Nb-Sc3">
+                                <rect key="frame" x="83" y="136" width="238" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="238" id="Bfr-v3-BBq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Table View Controller"/>
+                                <connections>
+                                    <segue destination="uSx-LV-RFc" kind="show" id="jQY-eP-DBw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0V-Yk-6VW">
+                                <rect key="frame" x="40" y="222" width="336" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="336" id="YNJ-Fi-E8N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Table View Controller With Progress Bar"/>
+                                <connections>
+                                    <segue destination="yIm-wS-YX3" kind="show" id="2C3-oD-FDG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hEE-gO-1s3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="A0V-Yk-6VW" firstAttribute="leading" secondItem="hEE-gO-1s3" secondAttribute="leading" constant="40" id="5H6-vJ-Rbw"/>
+                            <constraint firstItem="Qze-Nb-Sc3" firstAttribute="leading" secondItem="hEE-gO-1s3" secondAttribute="leading" constant="83" id="Vd8-3P-MXX"/>
+                            <constraint firstItem="Qze-Nb-Sc3" firstAttribute="top" secondItem="hEE-gO-1s3" secondAttribute="top" constant="48" id="WzS-gc-MWA"/>
+                            <constraint firstItem="hEE-gO-1s3" firstAttribute="trailing" secondItem="Qze-Nb-Sc3" secondAttribute="trailing" constant="93" id="cIB-fY-d1g"/>
+                            <constraint firstItem="hEE-gO-1s3" firstAttribute="trailing" secondItem="A0V-Yk-6VW" secondAttribute="trailing" constant="38" id="h6a-Vm-X73"/>
+                            <constraint firstItem="A0V-Yk-6VW" firstAttribute="top" secondItem="Qze-Nb-Sc3" secondAttribute="bottom" constant="44" id="kUA-ko-RTG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ejercicios Tabla" id="3eR-53-aiT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="avS-ib-4m6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2133.3333333333335" y="-4.0178571428571423"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ped-lX-ktp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QEN-ys-HdZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1cU-kd-gry">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RLu-AG-4ic" kind="relationship" relationship="rootViewController" id="dtw-fA-c53"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CbU-V8-CTx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1223.1884057971015" y="-4.0178571428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
