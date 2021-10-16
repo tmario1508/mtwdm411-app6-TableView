@@ -9,17 +9,30 @@ import UIKit
 
 class HeaderTableTableViewController: UITableViewController {
     
-    let alfabetoArreglo = Array(modelo.lugares.keys).sorted
+    let pullrefreshcontrol = UIRefreshControl()
+    
+    var alfabetoArreglo = Array(modelo.lugares.keys).sorted
     {
+        $0.description < $1.description
+    }
+    
+    let siguienteAlfabeto = Array(siguiente.sig.keys).sorted {
         $0.description < $1.description
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.refreshControl = pullrefreshcontrol
+        pullrefreshcontrol.addTarget(self, action: #selector(refreshTable), for: .valueChanged)
         
     }
 
+    @objc func refreshTable(){
+        alfabetoArreglo = alfabetoArreglo + siguienteAlfabeto
+        self.tableView.reloadData()
+        pullrefreshcontrol.endRefreshing()
+    }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

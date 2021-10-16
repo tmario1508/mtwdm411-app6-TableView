@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		584F8A13271A497D00098167 /* HeaderTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584F8A12271A497D00098167 /* HeaderTableTableViewController.swift */; };
 		584F8A16271A4BFE00098167 /* Modelo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584F8A15271A4BFE00098167 /* Modelo.swift */; };
+		584F8A1F271A567100098167 /* Siguiente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584F8A1E271A567100098167 /* Siguiente.swift */; };
 		ACA07ADC271113B500DA0A39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA07ADB271113B500DA0A39 /* AppDelegate.swift */; };
 		ACA07ADE271113B500DA0A39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA07ADD271113B500DA0A39 /* SceneDelegate.swift */; };
 		ACA07AE0271113B500DA0A39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA07ADF271113B500DA0A39 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		584F8A12271A497D00098167 /* HeaderTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableTableViewController.swift; sourceTree = "<group>"; };
 		584F8A15271A4BFE00098167 /* Modelo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modelo.swift; sourceTree = "<group>"; };
+		584F8A1E271A567100098167 /* Siguiente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Siguiente.swift; sourceTree = "<group>"; };
 		ACA07AD8271113B500DA0A39 /* app6-TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app6-TableView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA07ADB271113B500DA0A39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACA07ADD271113B500DA0A39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				584F8A15271A4BFE00098167 /* Modelo.swift */,
+				584F8A1E271A567100098167 /* Siguiente.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				ACA07AF127111D3500DA0A39 /* TableIndicatorViewController.swift in Sources */,
 				ACA07ADC271113B500DA0A39 /* AppDelegate.swift in Sources */,
 				584F8A16271A4BFE00098167 /* Modelo.swift in Sources */,
+				584F8A1F271A567100098167 /* Siguiente.swift in Sources */,
 				584F8A13271A497D00098167 /* HeaderTableTableViewController.swift in Sources */,
 				ACA07ADE271113B500DA0A39 /* SceneDelegate.swift in Sources */,
 			);
