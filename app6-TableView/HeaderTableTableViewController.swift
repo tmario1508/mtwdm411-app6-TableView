@@ -16,7 +16,7 @@ class HeaderTableTableViewController: UITableViewController {
         $0.description < $1.description
     }
     
-    let siguienteAlfabeto = Array(siguiente.sig.keys).sorted {
+    var siguienteAlfabeto = Array(siguiente.sig.keys).sorted {
         $0.description < $1.description
     }
 
@@ -24,7 +24,7 @@ class HeaderTableTableViewController: UITableViewController {
         super.viewDidLoad()
 
         self.refreshControl = pullrefreshcontrol
-        pullrefreshcontrol.addTarget(self, action: #selector(refreshTable), for: .valueChanged)
+        pullrefreshcontrol.addTarget(self, action: #selector(setearDatos), for: .valueChanged)
         
     }
 
@@ -37,7 +37,7 @@ class HeaderTableTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         
-        return modelo.lugares.count
+        return alfabetoArreglo.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -50,6 +50,20 @@ class HeaderTableTableViewController: UITableViewController {
         }
     }
 
+    
+    @objc func setearDatos() {
+        modelo.lugares["G"] = ["Guanajuato","Guadalajara","Gandhi"]
+        modelo.lugares["H"] = ["Honduras","Haiti","Huanimaro"]
+        modelo.lugares["I"] = ["Irapuato","Ignacio","Indu"]
+        alfabetoArreglo = Array(modelo.lugares.keys).sorted
+        {
+            $0.description < $1.description
+        }
+        print(modelo.lugares)
+        print(alfabetoArreglo)
+        self.tableView.reloadData()
+        pullrefreshcontrol.endRefreshing()
+    }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell", for: indexPath)

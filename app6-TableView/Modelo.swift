@@ -11,7 +11,7 @@ let modelo = Modelo()
 
 class Modelo {
     
-    let lugares = [
+    var lugares = [
         "A" : ["Acapulco","Apaseo","Antologia"],
         "B" : ["Baja California","Buzo","Baja"],
         "C" : ["Chilpancingo","Culiacan","Chetumal"],
